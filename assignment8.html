@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title>assignmentQ8</title>
+    <style>
+        body{
+            color: black;
+           /* text-align: center;*/
+        }
+        #content{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,minmax(15px,30px));
+            grid: gap 1px;
+            max-width: 960px;
+            margin: 3px;
+            
+            
+        }
+        #content div{
+            border: black;
+        }
+        #content div:nth-child(even)
+        {
+            background-color: grey;
+;
+        }
+        .top{
+            text-align: center;
+            background-color: darkslategrey;
+
+            grid-column: 1/7;
+        }
+        .right{
+            text-align: right;
+            background-color: rgba(128, 128, 128, 0.671);
+
+            grid-column: 4/8;
+        }
+        .left{
+            text-align: left;
+
+            grid-column: 1/4;
+
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+<div class="top">top</div>
+<div class="left">left</div>
+<div class="right">right</div>
+
+
+
+
+
+</body>
+</html>

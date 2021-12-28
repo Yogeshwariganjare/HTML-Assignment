@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title>assignmentQ8</title>
+    <style>
+        body{
+            color: black;
+           /* text-align: center;*/
+           
+        }
+        #content{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,minmax(12px,50px));
+            grid: gap 1px;
+            max-width: 960px;
+            margin: 3px;
+            border: black;
+            
+        }
+        #content div{
+            border: black;
+           
+        }
+        #content div:nth-child(even)
+        {
+            border: black;
+
+        }
+        
+        .topleft{
+            text-align: left;
+            background-color: dimgray;
+            grid-column: 1/4;
+        }
+        .topright{
+            text-align: right;
+            background-color:darkgray;
+
+            grid-column: 4/8;
+        }
+        .botleft{
+            text-align: left;
+            background-color:darkgray;
+            grid-column: 1/4;
+
+        }
+        .botright{
+            text-align:right;
+            background-color:dimgray;
+
+            grid-column: 4/7;
+
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+<div class="topleft">topleft</div>
+<div class="topright">topright</div>
+
+<div class="botleft">botleft</div>
+<div class="botright">botright</div>
+
+
+
+
+
+
+</body>
+</html>
